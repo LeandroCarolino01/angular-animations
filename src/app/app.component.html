@@ -1,0 +1,15 @@
+<div class="container">
+  
+  <button (click)="add()" class="btn">Click</button>
+
+  <div *ngFor="let text of popup">
+     
+     
+    <div @fade class="pop-up">
+        <button id="xbtn" (click)="onDelete()">x</button>
+      <p class="pop-content"> {{ text }}</p>
+    </div>
+  </div> 
+
+</div>
+
